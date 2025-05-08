@@ -13,6 +13,10 @@ import sensorRoutes from "./routes/sensor.routes.js";
 import consultaRoutes from "./routes/consulta.routes.js";
 import chatbotRoutes from "./routes/chatbot.routes.js";
 import integrationRoutes from "./routes/integration.routes.js";
+import thehiveRoutes from './routes/thehive.routes.js';
+
+
+
 
 dotenv.config();
 
@@ -37,6 +41,7 @@ app.use("/api/consultas", consultaRoutes);
 app.use("/api/health", healthRouter);
 app.use("/api/chatbot", chatbotRoutes);
 app.use("/api/integration", integrationRoutes);
+app.use('/api/thehive', thehiveRoutes);
 app.get("/api/test-db", async (req, res) => {
   try {
     const result = await pool.query("SELECT NOW()");
