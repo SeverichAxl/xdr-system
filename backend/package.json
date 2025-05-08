@@ -14,12 +14,16 @@
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "@opensearch-project/opensearch": "^3.5.1",
     "@prisma/client": "^6.6.0",
+    "axios": "^1.9.0",
     "backend": "file:",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-oauth2-jwt-bearer": "^1.6.1",
     "helmet": "^8.1.0",
+    "kafkajs": "^2.2.4",
     "morgan": "^1.10.0",
     "pg": "^8.14.1"
   },
